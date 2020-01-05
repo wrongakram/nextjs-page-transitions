@@ -5,6 +5,10 @@ import { motion } from "framer-motion";
 // Our custom easing
 let easing = [0.6, -0.05, 0.01, 0.99];
 
+// animate: defines animation
+// initial: defines initial state of animation or stating point.
+// exit: defines animation when component exits
+
 // Custom variant
 const fadeInUp = {
   initial: {
@@ -73,7 +77,7 @@ const Index = props => (
 
 Index.getInitialProps = async function() {
   const res = await fetch(
-    "http://my-json-server.typicode.com/wrongakram/demo/products"
+    "https://my-json-server.typicode.com/wrongakram/demo/products"
   );
   const data = await res.json();
   return {
