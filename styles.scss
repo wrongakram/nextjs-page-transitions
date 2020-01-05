@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,700,900&display=swap");
+
+body {
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: #f1f3f5;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.container {
+  width: 1540px;
+  margin: 0 auto;
+  &.center {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.title {
+  position: relative;
+  width: 350px;
+  h1 {
+    font-size: 2rem;
+    margin: 8px 0;
+  }
+  img {
+    position: absolute;
+    bottom: 64px;
+  }
+}
+
+.product-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 0 80px;
+  .card {
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 12px;
+    padding: 24px;
+    cursor: pointer;
+    background: #ffffff;
+    width: 425px;
+    height: 425px;
+    margin: 24px;
+    .category {
+      font-size: 0.875rem;
+      color: #424550;
+      font-weight: 500;
+      text-align: center;
+      width: 100%;
+      margin-bottom: 32px;
+      display: block;
+    }
+    img {
+      display: flex;
+      margin: 0 auto;
+    }
+    .product-info {
+      position: absolute;
+      width: 375px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      bottom: 24px;
+      h4 {
+        color: #282828;
+        font-size: 1.1rem;
+      }
+      span {
+        display: block;
+      }
+    }
+  }
+}
+
+.fullscreen {
+  height: 100vh;
+  .product {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .img {
+      width: 50%;
+      height: 100%;
+      background: #dfdfdf;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        cursor: move;
+        width: 500px;
+      }
+    }
+    .product-details {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .inner {
+        width: 480px;
+        position: relative;
+        .go-back {
+          cursor: pointer;
+          color: #282828;
+          text-decoration: none;
+          text-align: left;
+          position: absolute;
+          top: -124px;
+          left: 0;
+        }
+        .category {
+          font-size: 1rem;
+          color: #424550;
+          font-weight: 500;
+          text-align: center;
+          width: 100%;
+          margin-bottom: 32px;
+        }
+        p {
+          color: #424550;
+          font-weight: 300;
+        }
+        .additonals {
+          margin: 24px 0 48px;
+          span {
+            margin-right: 16px;
+            color: #424550;
+          }
+        }
+        .qty-price {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .qty {
+            display: flex;
+            align-items: center;
+            .add,
+            .minus {
+              padding: 6px;
+              margin: 8px 16px;
+              height: 24px;
+              width: 24px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-radius: 100px;
+            }
+            .add {
+              border: 1px solid #282828;
+              cursor: pointer;
+            }
+            .minus {
+              margin-left: 0;
+              background: #dfdfdf;
+              color: #787878;
+            }
+          }
+          .price {
+            color: #282828;
+            font-weight: 700;
+            font-size: 1.4rem;
+          }
+        }
+
+        .btn-row {
+          margin-top: 72px;
+          display: flex;
+          align-items: center;
+          button {
+            cursor: pointer;
+            border: none;
+            border-radius: 8px;
+            height: 48px;
+            padding: 0 48px;
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            font-weight: 500;
+            letter-spacing: 0.06rem;
+            &.add-to-cart {
+              background: #2d89fa;
+              color: #fff;
+              margin-right: 24px;
+            }
+            &.subscribe {
+              background: transparent;
+              color: #424550;
+            }
+          }
+        }
+      }
+    }
+  }
+}
