@@ -18,66 +18,60 @@ body {
     justify-content: center;
     align-items: center;
   }
-}
-
-.title {
-  position: relative;
-  width: 350px;
-  h1 {
-    font-size: 2rem;
-    margin: 8px 0;
-  }
-  img {
-    position: absolute;
-    bottom: 64px;
-  }
-}
-
-.product-row {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  padding: 0 80px;
-  .card {
-    box-sizing: border-box;
+  .title {
     position: relative;
-    border-radius: 12px;
-    padding: 24px;
-    cursor: pointer;
-    background: #ffffff;
-    width: 425px;
-    height: 425px;
-    margin: 24px;
-    .category {
-      font-size: 0.875rem;
-      color: #424550;
-      font-weight: 500;
-      text-align: center;
-      width: 100%;
-      margin-bottom: 32px;
-      display: block;
+    width: 350px;
+    h1 {
+      font-size: 2rem;
+      margin: 8px 0;
     }
-    img {
-      display: flex;
-      margin: 0 auto;
-    }
-    .product-info {
-      position: absolute;
-      width: 375px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      left: 0;
-      right: 0;
-      margin: 0 auto;
-      bottom: 24px;
-      h4 {
-        color: #282828;
-        font-size: 1.1rem;
-      }
-      span {
+  }
+  .product-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 0 80px;
+    .card {
+      box-sizing: border-box;
+      position: relative;
+      border-radius: 12px;
+      padding: 24px;
+      cursor: pointer;
+      background: #ffffff;
+      width: 425px;
+      height: 425px;
+      margin: 24px;
+      .category {
+        font-size: 0.875rem;
+        color: #424550;
+        font-weight: 500;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 32px;
         display: block;
+      }
+      img {
+        display: flex;
+        margin: 0 auto;
+      }
+      .product-info {
+        position: absolute;
+        width: 375px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        bottom: 24px;
+        h4 {
+          color: #282828;
+          font-size: 1.1rem;
+        }
+        span {
+          display: block;
+        }
       }
     }
   }
